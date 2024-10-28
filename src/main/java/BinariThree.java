@@ -1,8 +1,7 @@
 public class BinariThree {
     public static void main(String[] args) {
-        Three three = new Three(21, new Three(7,null,null), new Three(8,null,null));
-
-        System.out.println("" + three.sum());
+        Three three = new Three(21, new Three(7, null, null), new Three(8, null, null));
+        System.out.println(" " + three.sum());
     }
 
     static class Three {
@@ -22,7 +21,6 @@ public class BinariThree {
 
         public int sum() {
             int sum = value;
-
             if (left != null) {
                 sum += left.sum();
             }
@@ -32,7 +30,6 @@ public class BinariThree {
             return sum;
         }
     }
-
 }
 
 
